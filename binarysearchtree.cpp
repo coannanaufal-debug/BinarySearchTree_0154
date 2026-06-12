@@ -13,3 +13,8 @@ public:
         rightchild = r;
     }
 };
+
+class BinarySearchTree {
+    public:
+    Node* root;
+    
