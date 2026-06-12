@@ -14,10 +14,15 @@ public:
     }
 };
 
-class BinarySearchTree {
+class BinaryTree {
     public:
     Node* root;
-    Binarytree() {
+    BinaryTree() {
         root = nullptr;
     }
-    
+void insert(string element) {
+    Node*newNode = new Node(element, nullptr, nullptr);
+    newNode->info = element;
+    newNode->leftchild = nullptr;
+    newNode->rightchild = nullptr;
+}
