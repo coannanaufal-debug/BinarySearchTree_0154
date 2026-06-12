@@ -17,4 +17,7 @@ public:
 class BinarySearchTree {
     public:
     Node* root;
+    Binarytree() {
+        root = nullptr;
+    }
     
