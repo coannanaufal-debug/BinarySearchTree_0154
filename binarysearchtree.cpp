@@ -19,7 +19,7 @@ class BinaryTree {
     Node* root;
     BinaryTree() {
         root = nullptr;
-    }
+    
 void insert(string element) {
     Node*newNode = new Node(element, nullptr, nullptr);
     newNode->info = element;
@@ -29,4 +29,11 @@ void insert(string element) {
     Node* parent = nullptr;
     Node* currentNode = nullptr;
     search(element, parent, currentNode);
+
+    if (parent == nullptr){
+        root == newNode;
+        return;
+    }
+    if (element < parent->info) {
+        
 }
