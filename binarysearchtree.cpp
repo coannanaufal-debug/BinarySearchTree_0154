@@ -34,6 +34,12 @@ void insert(string element) {
         root == newNode;
         return;
     }
-    if (element < parent->info) {
-        
+    if (element < parent->info)
+    {
+        parent->leftchild = newNode;
+    } 
+    else
+    {
+        parent->rightchild = newNode;
+    }
 }
