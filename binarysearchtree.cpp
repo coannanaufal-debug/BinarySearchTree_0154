@@ -105,6 +105,43 @@ int main(){
         cout << "3. Implement Preorder traversal" << endl;
         cout << "4. Implement Postorder traversal" << endl;
         cout << "5. Exit" << endl;
-        cout << "Enter your choice: ";
+        cout << "Enter your choice (1-5): ";
+        char choice;
+        cin >> choice;
+        cout << endl;
+        switch (choice)
+        {
+            case '1':
+                cout << "enter a word : ";
+                {
+                    string word;
+                    cin >> word;
+                    x.insert(word);
+                }
+                break;
+            case '2':
+        {
+                x.inorder(x.root);
+                break;
+        }
+            case '3':
+        {
+                x.preorder(x.root);
+                break;
+        }
+            case '4':
+        {
+                x.postorder(x.root);
+                break;
+        }
+        case '5': {
+            return 0;
+        }
+        default:{
+            cout << "Invalid choice" << endl;
+            break;
+        }
+
     }
+}
 }
